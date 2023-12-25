@@ -9,7 +9,7 @@ header {
 	background-color: white;
 	display: flex;
 	justify-content: space-between;
-	flex-direction: row-reverse;
+	flex-direction: row;
 }
 img {
 	object-fit: cover !important;
@@ -32,14 +32,10 @@ img {
 	color: white;
 }
 
-.nav:visit {
-	background-color: #ffc53d;
-	color: white;
-}
-
 .logo img {
 	height: 5rem;
 	width: 7rem;
+	margin-right: 3rem;
 }
 
 .title {
@@ -118,7 +114,7 @@ img {
 }
 
 .left-col img {
-	width: 13rem;
+	width: 12rem;
 	height: 15rem;
 	object-fit: cover;
 }
@@ -338,7 +334,7 @@ ion-icon {
 
 .active {
 	background-color: white;
-	height: 100vh;
+	margin-bottom: 1rem;
 	display: flex;
 	justify-content: space-between;
 	gap: 15rem;
@@ -377,7 +373,6 @@ ion-icon {
 
 .registration {
 	background-color: #ffc53d;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -397,7 +392,7 @@ form {
 
 form h2 {
 	font-size: 2rem;
-	font-width: 600;
+	font-weight: 600;
 	text-align: center;
 	margin-top: -1rem;
 }
