@@ -9,22 +9,31 @@
 			href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="styles/style.css" />
-		<link rel="stylesheet" href="./styles/quaries.css" />
+		<link rel="stylesheet" href="styles/style1.css" />
+		<script src="tailwind.js"></script>
+		<script src="js/script.js" defer></script>
 		<title>Masoma GYM</title>
 	</head>
-	<body>
+	<body class="overflow-x-hidden">
 		<header>
-			<div class="navigation">
+			<div class="navigation hidden md:block">
 				<a class="nav" href="#home">Home</a>
 				<a class="nav" href="#why">Why us?</a>
 				<a class="nav" href="#story">Stories</a>
 				<a class="nav" href="#register">Registration</a>
 			</div>
+			<div id="menu" class="px-9 pt-5 md:hidden">
+				<ion-icon size="large" name="menu"></ion-icon>
+			</div>
 			<div class="logo">
 				<img src="./images/logo1.jpg" alt="" />
 			</div>
 		</header>
+		<div id="mobile-nav" class="hidden absolute text-[#ffc53d] h-[w-3/5] text-center  bg-black/30 backdrop-blur-sm left-0 right-0 top-0 p-4 w-full ease-in-out duration-500">
+			<a class="nav block my-3 py-2 font-semibold" href="#home">Home</a>
+			<a class="nav block my-3 py-2 font-semibold" href="#why">Why us?</a>
+			<a class="nav block my-3 py-2 font-semibold" href="#story">Stories</a>
+			<a class="nav block my-3 py-2 font-semibold" href="#register">Registration</a></div>
 		<article class="home">
 			<section id="home" class="hero-section">
 				<div class="title">
