@@ -1,0 +1,568 @@
+/* Responsive styles */
+@media only screen and (max-width: 460px) {
+	.title {
+		padding: 2rem 1rem;
+		gap: 2rem;
+	}
+
+	.title h1 {
+		font-size: 2rem;
+	}
+
+	.buttons {
+		padding: 2rem;
+	}
+
+
+	.title p {
+		font-size: 1rem;
+	}
+
+	.buttons {
+		flex-direction: column;
+	}
+
+	.title .left-btn {
+		width: 100%;
+	}
+
+	.btns {
+		font-size: 1rem;
+	}
+
+	.journey,
+	.start {
+		flex-direction: column;
+	}
+
+	.start {
+		margin-bottom: 0;
+		padding: 3rem 2rem;
+	}
+
+		.start-content div {
+			gap: 1rem;
+		}
+
+		.img2{
+			display: none;
+		}
+
+	.start .btns {
+		font-size: large;
+		font-weight: 500;
+	}
+
+	.start h2 {
+		font-weight: 600;
+		font-size: 2.3rem;
+	}
+
+	.start p {
+		font-size: 1rem;
+		font-weight: 400;
+	}
+
+	.padding {
+		padding: 2rem;
+	}
+
+	.second {
+		display: none;
+	}
+
+	.first {
+		display: block;
+	}
+
+	.left-col {
+		flex-direction: column;
+	}
+
+	.two-img img {
+		flex-direction: row;
+		height: 20%;
+		width: 50%;
+	}
+
+	.left-col,
+	.right-col {
+		width: 100%;
+	}
+
+	.left-col img {
+		width: 100%;
+		height: auto;
+	}
+
+	.why-us,
+	.defination,
+	.charater,
+	.one-row,
+	.two-row {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.why-us {
+		gap: 1rem;
+		padding: 3rem 2rem;
+	}
+
+	.defination h2 {
+		font-size: 2.5rem;
+		font-weight: 600;
+	}
+
+	.defination h3 {
+		font-size: 1.5rem;
+		font-weight: 500;
+	}
+
+	.charater img {
+		width: 100%;
+		height: auto;
+	}
+
+	.active,
+	.stories,
+	.persons {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.stories {
+		gap: 2rem;
+	}
+
+	.active h2 {
+		font-size: 2.5rem;
+		font-weight: 600;
+		line-height: 2.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.stories h2 {
+		font-size: 2.5rem;
+		font-weight: 600;
+		line-height: 2.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.active {
+		gap: 7rem;
+	}
+
+	.absolute {
+		left: 5rem;
+		top: 6rem;
+		margin-left: -2rem;
+	}
+
+	.active .two-imgs {
+		width: 90%;
+	}
+
+	.persons,
+	.active img {
+		width: 100%;
+		height: auto;
+	}
+
+	.persons {
+		width: 90%;
+	}
+
+	form,
+	.first-div,
+	.secound-div {
+		flex-direction: column;
+		width: 100%;
+		gap: 0.5rem !important;
+	}
+
+	form {
+		padding: 0.5rem;
+		width: 100% !important;
+		margin: 0;
+	}
+
+	form .div {
+		margin: 0;
+	}
+
+	.registration button {
+		background-color: black;
+	}
+
+	.registration {
+		padding: 1rem;
+	}
+
+	.gif {
+		width: 60%;
+	}
+
+	ion-icon {
+		color: #ffc53d;
+	}
+
+}
+
+@media only screen and (min-width: 461px) and (max-width: 600px) {
+	.title {
+		padding: 2rem 2rem;
+	}
+
+	.title .left-btn {
+		width: 100%;
+	}
+
+	.title h1 {
+		font-size: 3rem;
+	}
+
+	.title p {
+		font-size: 1.2rem;
+	}
+
+	.buttons {
+		flex-direction: row;
+	}
+
+	.btns {
+		font-size: 1.2rem;
+	}
+
+	.journey,
+	.start {
+		flex-direction: row;
+	}
+
+	.second {
+		display: none;
+	}
+
+	.first {
+		display: block;
+	}
+
+	.left-col,
+	.right-col {
+		width: 100%;
+	}
+
+	.left-col img {
+		width: 100%;
+		height: auto;
+	}
+
+	.why-us,
+	.defination,
+	.charater {
+		flex-direction: row;
+	}
+
+	.one-row,
+	.two-row {
+		flex-direction: column;
+	}
+
+	.charater img {
+		width: 100%;
+		height: auto;
+	}
+
+	.active,
+	.stories,
+	.persons {
+		flex-direction: row;
+	}
+
+	.active img,
+	.persons img {
+		width: 100%;
+		height: auto;
+	}
+
+	form {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.first-div,
+	.secound-div {
+		flex-direction: row;
+	}
+}
+
+@media only screen and (min-width: 601px) and (max-width: 850px) {
+	.title {
+		padding: 2rem 3rem;
+	}
+
+	.title .left-btn {
+		width: 55%;
+	}
+
+	.title h1 {
+		font-size: 3.5rem;
+	}
+
+	.title p {
+		font-size: 1.3rem;
+	}
+
+	.buttons {
+		flex-direction: row;
+	}
+
+	.btns {
+		font-size: 1.3rem;
+	}
+
+	.journey {
+		flex-direction: column;
+	}
+
+	.right-col {
+		flex-direction: row;
+	}
+
+	.start {
+		padding: 3rem 3rem;
+	}
+
+	.start-content div {
+		gap: 1rem;
+	}
+
+	.first {
+		display: block;
+	}
+
+	.second {
+		display: none;
+	}
+
+	.left-col,
+	.right-col {
+		width: 100%
+	}
+
+	.two-img {
+		width: 100%;
+	}
+
+
+	.img2 {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.left-col img {
+		width: 100%;
+		height: 10rem;
+	}
+
+	.why-us,
+	.defination {
+		flex-direction: row;
+	}
+
+	.defination {
+		margin-top: 4rem;
+	}
+
+	.why-us h2 {
+		font-size: 3rem;
+		font-weight: 700;
+	}
+
+	.defination h3 {
+		font-size: 1.6rem;
+		font-weight: 500;
+	}
+
+	.defination p {
+		font-size: 1rem;
+	}
+
+	.why-us {
+		padding: 3rem 3rem;
+	}
+
+	.charater {
+		flex-direction: column;
+		width: 40%;
+	}
+
+	.one-row,
+	.two-row {
+		flex-direction: column;
+	}
+
+	.charater img {
+		width: 100%;
+		height: auto;
+	}
+
+	.active {
+		flex-direction: column;
+		gap: 6rem;
+	}
+
+	.stories,
+	.persons {
+		flex-direction: row;
+	}
+
+	.stories{
+		padding: 3rem 4rem;
+	}
+	.persons{
+		width: 100%;
+		gap: 0.5rem;
+	}
+
+	.persons div{
+		padding: 0.5rem;
+	}
+
+	.active img {
+		width: 80%;
+		height: 80%;
+	}
+
+	.absolute {
+		top: 7rem;
+		left: 8rem;
+	}
+
+		.persons p {
+			font-size: 1rem;
+			margin-top: -0.3rem;
+		}
+	
+		.persons h3 {
+			font-size: 1.3rem;
+			margin: 0.5rem 0;
+		}
+
+	form {
+		flex-direction: column;
+		width: 80% !important;
+	}
+
+		.registration button {
+			background-color: black;
+		}
+
+	.first-div,
+	.secound-div {
+		flex-direction: row;
+	}
+
+		.gif {
+			width: 25%;
+		}
+}
+
+@media only screen and (min-width: 851px) and (max-width: 1000px) {
+	.title {
+		padding: 2rem 4rem;
+	}
+
+	.title .left-btn {
+		width: 50%;
+	}
+
+	.title h1 {
+		font-size: 4rem;
+	}
+
+	.title p {
+		font-size: 1.4rem;
+	}
+
+	.buttons {
+		flex-direction: row;
+	}
+
+	.btns {
+		font-size: 1.4rem;
+	}
+
+	.journey,
+	.start {
+		flex-direction: row;
+	}
+
+	.first {
+		display: none;
+	}
+
+	.second {
+		display: block;
+	}
+
+	.left-col,
+	.right-col {
+		width: 70%;
+	}
+
+	.left-col img {
+		width: 12rem;
+		height: 15rem;
+	}
+
+	.why-us,
+	.defination,
+	.charater {
+		flex-direction: row;
+	}
+
+	.one-row,
+	.two-row {
+		flex-direction: column;
+	}
+
+	.charater img {
+		width: 16rem;
+		height: 18rem;
+	}
+
+	.active,
+	.stories,
+	.persons {
+		flex-direction: row;
+	}
+
+	.active img,
+	.persons img {
+		width: 22rem;
+		height: 20rem;
+	}
+
+	form,
+	.first-div,
+	.secound-div {
+		flex-direction: row;
+		width: 60%;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.title .btns {
+		width: 100%;
+		padding: 0.5rem 2.3rem;
+	}
+
+	.btns {
+		padding: 1.3rem 2.3rem;
+
+	}
+}

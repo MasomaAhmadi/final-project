@@ -10,11 +10,13 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="styles/style1.css" />
+		<link rel="stylesheet" href="styles/quaries.css">
+		<link rel="stylesheet" href="styles/style.css" />
 		<script src="tailwind.js"></script>
 		<script src="js/script.js" defer></script>
 		<title>Masoma GYM</title>
 	</head>
-	<body class="overflow-x-hidden">
+	<body class="overflow-x-hidden p-0">
 		<header>
 			<div class="navigation hidden md:block">
 				<a class="nav" href="#home">Home</a>
@@ -23,21 +25,35 @@
 				<a class="nav" href="#register">Registration</a>
 			</div>
 			<div id="menu" class="px-9 pt-5 md:hidden">
-				<ion-icon size="large" name="menu"></ion-icon>
+				<ion-icon class="text-[#ffc53d]" size="large" name="menu"></ion-icon>
 			</div>
 			<div class="logo">
 				<img src="./images/logo1.jpg" alt="" />
 			</div>
 		</header>
-		<div id="mobile-nav" class="hidden absolute text-[#ffc53d] h-[w-3/5] text-center  bg-black/30 backdrop-blur-sm left-0 right-0 top-0 p-4 w-full ease-in-out duration-500">
-			<a class="nav block my-3 py-2 font-semibold" href="#home">Home</a>
-			<a class="nav block my-3 py-2 font-semibold" href="#why">Why us?</a>
-			<a class="nav block my-3 py-2 font-semibold" href="#story">Stories</a>
-			<a class="nav block my-3 py-2 font-semibold" href="#register">Registration</a></div>
+		<div
+			id="mobile-nav"
+			class="hidden absolute text-[#ffc53d] h-[w-3/5] bg-black/30 backdrop-blur-sm left-0 right-0 top-0 p-4 w-full ease-in-out duration-500"
+		>
+			<span id="close"><ion-icon size="large" class="text-[#ffc53d] px-8 pt-4 hover:rotate-90
+				 duration-500" name="close-circle-outline"></ion-icon></span>
+			<div class="mob-nav flex flex-col items-center justify-center">
+				<a class="nav w-full text-center my-3 py-2 font-semibold" href="#home">Home</a>
+				<a class="nav w-full text-center my-3 py-2 font-semibold" href="#why">Why us?</a>
+				<a class="nav w-full text-center my-3 py-2 font-semibold" href="#story">Stories</a>
+				<a class="nav w-full text-center my-3 py-2 font-semibold" href="#register"
+				>Registration</a
+				>
+			</div>
+		</div>
 		<article class="home">
 			<section id="home" class="hero-section">
 				<div class="title">
-					<h1>Sports and wellness the way you want it - in one membership</h1>
+					<h1
+						class=""
+					>
+						Sports and wellness the way you want it - in one membership
+					</h1>
 					<p>
 						Work out whenever, wherever and however you like – indoors, outdoors
 						and online. Enjoy the most flexible sports and wellness offer in
@@ -49,6 +65,35 @@
 					</div>
 				</div>
 				<div class="journey padding">
+					<div class="right-col first">
+						<div>
+							<h2>Fitness journey</h2>
+							<div>
+								<h3 class="heading3">Endless variety</h3>
+								
+								<p>
+									Choose from more than 50 types of sports offered by over 10,000
+									partners.
+								</p>
+							</div>
+						</div>
+
+						<div>
+							<div>
+								<h3>Discover something new</h3>
+								<p>
+									Sick of the same old? You’ll never get bored with us. Discover
+									new activities every day.
+								</p>
+							</div>
+							<div>
+								<h3>Combine activities</h3>
+								<p>
+									Like to switch things up? A multi-sport plan is the way to go.
+								</p>
+							</div>
+						</div>
+					</div>
 					<div class="left-col">
 						<div class="two-img">
 							<div class="imgs">
@@ -60,7 +105,7 @@
 								<div class="caption">yoga</div>
 							</div>
 						</div>
-						<div class="img2">
+						<div class="img2 hidden sm:block">
 							<img src="images/sweaming.jpg" alt="sweaming" />
 							<div class="caption">sweaming</div>
 						</div>
@@ -75,11 +120,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="right-col">
+					<div class="right-col second">
 						<h2>Fitness journey</h2>
 						<div>
 							<h3 class="heading3">Endless variety</h3>
-
+							
 							<p>
 								Choose from more than 50 types of sports offered by over 10,000
 								partners.
@@ -100,36 +145,37 @@
 						</div>
 					</div>
 				</div>
-				<div class="start padding">
+				<div class="start">
 					<div class="start-content">
 						<h2>start today</h2>
-						<div>
+						<div class="my-2 mt-5">
 							<ion-icon size="large" name="checkmark-circle-outline"></ion-icon>
 							<p>Your endless to-do list</p>
 						</div>
-						<div>
+						<div class="my-2">
 							<ion-icon size="large" name="checkmark-circle-outline"></ion-icon>
 							<p>Your struggles to get fit in the past</p>
 						</div>
-						<div>
+						<div class="my-2">
 							<ion-icon size="large" name="checkmark-circle-outline"></ion-icon>
 							<p>Your stress and tension</p>
 						</div>
-						<button class="right-btn btns" style="margin-top: 1.5rem">
-							Get started now
-						</button>
+						<button class="right-btn btns mt-9">Get started now</button>
 					</div>
 				</div>
 			</section>
 
-			<section id="why" class="why-us padding">
+			<section id="why" class="why-us">
 				<div class="defination">
 					<h2>why us?</h2>
 					<h3>Flexible Membership Plans with a Clean and Safe Environment:</h3>
 					<p>
-						We offer flexible membership plans to suit your lifestyle and budget. Whether you’re a student, a working professional, or a senior citizen, we have a plan for you.
-
-Furthermore, we prioritize the cleanliness and safety of our facilities. Our gym is cleaned regularly, and we follow all health and safety guidelines to ensure a safe workout environment.
+						We offer flexible membership plans to suit your lifestyle and
+						budget. Whether you’re a student, a working professional, or a
+						senior citizen, we have a plan for you. Furthermore, we prioritize
+						the cleanliness and safety of our facilities. Our gym is cleaned
+						regularly, and we follow all health and safety guidelines to ensure
+						a safe workout environment.
 					</p>
 					<button class="right-btn btns" style="margin-top: 3rem">
 						view membership
@@ -142,7 +188,9 @@ Furthermore, we prioritize the cleanliness and safety of our facilities. Our gym
 							<img class="coach" src="images/why-us/coach.webp" alt="coach" />
 						</div>
 						<div class="desciption">
-							Our team of certified trainers is dedicated to helping you achieve your fitness goals. They provide personalized workout plans and nutritional advice.
+							Our team of certified trainers is dedicated to helping you achieve
+							your fitness goals. They provide personalized workout plans and
+							nutritional advice.
 						</div>
 					</div>
 					<div class="two-row">
@@ -156,7 +204,8 @@ Furthermore, we prioritize the cleanliness and safety of our facilities. Our gym
 								/>
 							</div>
 							<div class="desciption">
-								We provide a wide range of high-quality gym equipment to cater to all your fitness needs.
+								We provide a wide range of high-quality gym equipment to cater
+								to all your fitness needs.
 							</div>
 						</div>
 						<div>
@@ -169,7 +218,8 @@ Furthermore, we prioritize the cleanliness and safety of our facilities. Our gym
 								/>
 							</div>
 							<div class="desciption">
-								We offer a variety of fitness classes, including yoga, Zumba, spinning, and more, so you can find a workout that you love.
+								We offer a variety of fitness classes, including yoga, Zumba,
+								spinning, and more, so you can find a workout that you love.
 							</div>
 						</div>
 					</div>
@@ -192,7 +242,13 @@ Furthermore, we prioritize the cleanliness and safety of our facilities. Our gym
 				<div class="how">
 					<h2>Get active, wherever you want</h2>
 					<p>
-						In today’s fast-paced world, we understand that maintaining a regular gym schedule can be challenging. That’s why we’ve developed a range of online resources to help you stay active, no matter where you are. Our mission is to make fitness accessible and convenient for everyone. So, whether you’re traveling, working late, or simply prefer working out at home, we’ve got you covered. Get active with us, wherever you want, whenever you want! 💪
+						In today’s fast-paced world, we understand that maintaining a
+						regular gym schedule can be challenging. That’s why we’ve developed
+						a range of online resources to help you stay active, no matter where
+						you are. Our mission is to make fitness accessible and convenient
+						for everyone. So, whether you’re traveling, working late, or simply
+						prefer working out at home, we’ve got you covered. Get active with
+						us, wherever you want, whenever you want! 💪
 					</p>
 					<button class="left-btn btns" style="color: black">
 						view membership
@@ -203,64 +259,115 @@ Furthermore, we prioritize the cleanliness and safety of our facilities. Our gym
 			<section id="story" class="stories padding">
 				<h2>Inspirational Success Stories</h2>
 				<p>
-					Discover the journeys of our gym members who transformed their lives through fitness. Their stories of perseverance, dedication, and triumph over challenges are sure to inspire you on your own fitness journey. Stay tuned! 
+					Discover the journeys of our gym members who transformed their lives
+					through fitness. Their stories of perseverance, dedication, and
+					triumph over challenges are sure to inspire you on your own fitness
+					journey. Stay tuned!
 				</p>
 				<div class="persons">
 					<div>
 						<img src="images/stories/anna.jpg" alt="Anna Henson" />
 						<h3>Anna Henson</h3>
 						<p>
-							Anna, a busy mom, always thought she didn’t have time for fitness. But with our flexible schedules, she found a routine that worked for her. She’s now toned, energetic, and a role model for her kids.
+							Anna, a busy mom, always thought she didn’t have time for fitness.
+							But with our flexible schedules, she found a routine that worked
+							for her. She’s now toned, energetic, and a role model for her
+							kids.
 						</p>
 					</div>
 					<div>
 						<img src="images/stories/sbaustin.avif" alt="Sbaustin Bash" />
 						<h3>Sbaustin Bash</h3>
 						<p>
-							Once overweight and battling low self-esteem, John decided to take control of his life. With dedication and hard work at our gym, he lost 30 pounds. Today, he’s not just physically fit but also brimming with confidence.
+							Once overweight and battling low self-esteem, John decided to take
+							control of his life. With dedication and hard work at our gym, he
+							lost 30 pounds. Today, he’s not just physically fit but also
+							brimming with confidence.
 						</p>
 					</div>
 					<div>
 						<img src="images/stories/sasan.jpg" alt="Susan Willson" />
 						<h3>Susan Willson</h3>
 						<p>
-							Susan was dealing with health issues that kept her from living life to the fullest. Joining our gym was her first step towards recovery. Today, she’s healthier, happier, and an inspiration to everyone around her.
+							Susan was dealing with health issues that kept her from living
+							life to the fullest. Joining our gym was her first step towards
+							recovery. Today, she’s healthier, happier, and an inspiration to
+							everyone around her.
 						</p>
 					</div>
 				</div>
 			</section>
-
-			<section id="register" class="registration">
-				<form action="./submited.html">
-					<h2>Contact Us</h2>
-					<div class="first-row">
-						<div>
+<section id="register" class="registration">
+				<form
+					action="./submited.html"
+					class="bg-white p-8 flex flex-col gap-2 w-3/5 mx-auto font-medium"
+				>
+					<h2 class="text-2xl font-semibold text-center mt-[-4]">Contact Us</h2>
+					<div class=" first-div flex gap-16 w-full">
+						<div class="flex flex-col w-full">
 							<label for="address">Address</label>
-							<input type="text" id="address" required />
+							<input
+								type="text"
+								id="address"
+								placeholder="Enter your Address!"
+								required
+								class="p-4 rounded-md border-gray-400 border-2"
+							/>
 						</div>
-						<div>
+						<div class="flex flex-col w-full">
 							<label for="name">Your Name</label>
-							<input type="text" id="name" required />
+							<input
+								type="text"
+								id="name"
+								placeholder="Enter your name!"
+								required
+								class="p-4 rounded-md border-gray-400 border-2"
+							/>
 						</div>
 					</div>
-					<div class="first-row">
-						<div>
+					<div class="secound-div flex gap-16 w-full">
+						<div class="flex flex-col w-full">
 							<label for="phone">Phone Number</label>
-							<input type="number" id="phone" required />
+							<input
+								type="number"
+								id="phone"
+								placeholder="Enter your phone number!"
+								required
+								class="p-4 rounded-md border-gray-400 border-2"
+							/>
 						</div>
-						<div>
+						<div class="flex flex-col w-full">
 							<label for="date">Date</label>
-							<input type="date" id="date" required />
+							<input
+								type="date"
+								id="date"
+								required
+								class="p-4 rounded-md border-gray-400 border-2"
+							/>
 						</div>
 					</div>
-					<span>Any Message?</span>
-					<textarea name="message" id="comment" cols="30" rows="7"></textarea>
-					<button type="submit" class="submit">Submit</button>
+					<div class="flex flex-col gap-2">
+						<span>Any Message?</span>
+						<textarea
+							name="message"
+							id="comment"
+							cols="30"
+							rows="7"
+							class="p-4 w-full border-gray-400 border-2 rounded-md"
+						></textarea>
+					</div>
+					<button
+						type="submit"
+						class="w-full bg-black text-white py-4 text-lg border-none font-serif"
+					>
+						Submit
+					</button>
 				</form>
 			</section>
+			
 		</article>
 		<footer>
-			<div class="connections">
+			<div class="connection">
 				<a
 					href="https://www.linkedin.com/in/masoma-ahmadi-867902260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
 				>
@@ -276,6 +383,8 @@ Furthermore, we prioritize the cleanliness and safety of our facilities. Our gym
 			<strong> Developed by Masoma Ahmadi</strong>
 			<div class="gif"></div>
 		</footer>
-		<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+		<!-- <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> -->
+		<script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
 	</body>
 </html>
