@@ -2,7 +2,8 @@
 @media only screen and (max-width: 460px) {
 	.logo img {
 		margin-right: 1rem;
-		}
+	}
+
 	.title {
 		padding: 2rem 1rem;
 		gap: 2rem;
@@ -38,7 +39,7 @@
 		flex-direction: column;
 	}
 
-	.journey{
+	.journey {
 		flex-direction: column-reverse;
 	}
 
@@ -47,13 +48,13 @@
 		padding: 3rem 2rem;
 	}
 
-		.start-content div {
-			gap: 1rem;
-		}
+	.start-content div {
+		gap: 1rem;
+	}
 
-		.img2{
-			display: none;
-		}
+	.img2 {
+		display: none;
+	}
 
 	.start .btns {
 		font-size: large;
@@ -305,8 +306,9 @@
 
 @media only screen and (min-width: 601px) and (max-width: 850px) {
 	.logo img {
-			margin-right: 2rem;
-		}
+		margin-right: 2rem;
+	}
+
 	.title {
 		padding: 2rem 3rem;
 	}
@@ -367,7 +369,7 @@
 
 	.img2 {
 		width: 100%;
-		display: flex;
+		display: flex !important;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
@@ -430,15 +432,16 @@
 		flex-direction: row;
 	}
 
-	.stories{
+	.stories {
 		padding: 3rem 4rem;
 	}
-	.persons{
+
+	.persons {
 		width: 100%;
 		gap: 0.5rem;
 	}
 
-	.persons div{
+	.persons div {
 		padding: 0.5rem;
 	}
 
@@ -452,33 +455,33 @@
 		left: 8rem;
 	}
 
-		.persons p {
-			font-size: 1rem;
-			margin-top: -0.3rem;
-		}
-	
-		.persons h3 {
-			font-size: 1.3rem;
-			margin: 0.5rem 0;
-		}
+	.persons p {
+		font-size: 1rem;
+		margin-top: -0.3rem;
+	}
+
+	.persons h3 {
+		font-size: 1.3rem;
+		margin: 0.5rem 0;
+	}
 
 	form {
 		flex-direction: column;
 		width: 80% !important;
 	}
 
-		.registration button {
-			background-color: black;
-		}
+	.registration button {
+		background-color: black;
+	}
 
 	.first-div,
 	.secound-div {
 		flex-direction: row;
 	}
 
-		.gif {
-			width: 25%;
-		}
+	.gif {
+		width: 25%;
+	}
 }
 
 @media only screen and (min-width: 851px) and (max-width: 1000px) {
@@ -510,6 +513,15 @@
 	.start {
 		flex-direction: row;
 	}
+
+		.img2 {
+			display: flex !important;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+	
 
 	.left-col,
 	.right-col {
@@ -563,7 +575,7 @@
 		padding: 0.5rem 2.3rem;
 	}
 
-	.title{
+	.title {
 		padding: 2rem 7rem;
 	}
 
@@ -572,20 +584,19 @@
 
 	}
 
-	.journey .padding{
+	.journey {
+		gap: 3rem;
 		padding: 3rem 3rem;
 	}
 
-	.journey{
-		gap: 2rem;
-		padding: 3rem 3rem;
+	.img2 {
+		display: flex !important;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
 
-		.img2 {
-			width: 50%;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-		}
+	.stories {
+		padding: 3rem 5rem;
+	}
 }
